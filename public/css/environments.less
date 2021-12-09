@@ -1,0 +1,175 @@
+/*
+ * Copyright Huesik (c) 2019.
+ */
+
+@import './palette';
+
+span.subway {
+  line-height: 1.2rem;
+
+  &:before {
+    vertical-align: middle;
+    display: inline-block;
+    min-width: 1.2rem;
+    height: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2rem;
+    border-radius: 1.2rem;
+    /* margin-right: 0.5rem; */
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin: 0 .3rem 0 0;
+  }
+
+  &.line1 {
+    color: #1b3883;
+  }
+  &.line2 {
+    color: #00a551;
+  }
+  &.line3 {
+    color: #e37628;
+  }
+  &.line4 {
+    color: #00a5db;
+  }
+  &.line5 {
+    color: #954d90;
+  }
+  &.line6 {
+    color: #a3723d;
+  }
+  &.line7 {
+    color: #5e6f40;
+  }
+  &.line8 {
+    color: #de546d;
+  }
+  &.line9 {
+    color: #a7883c;
+  }
+  &.bundang {
+    color: #f5c72c;
+  }
+  &.sinbundang {
+    color: #b2333e;
+  }
+  &.jungang {
+    color: #5abcc1;
+  }
+  &.kyeong {
+    color: #5abcc1;
+  }
+  &.chun {
+    color: #008989;
+  }
+  &.airport {
+    color: #008989;
+  }
+  &.line1:before {
+    content: "1";
+    background: #1b3883;
+  }
+  &.line2:before {
+    content: "2";
+    background: #00a551;
+  }
+  &.line3:before {
+    content: "3";
+    background: #e37628;
+  }
+  &.line4:before {
+    content: "4";
+    background: #00a5db;
+  }
+  &.line5:before {
+    content: "5";
+    background: #954d90;
+  }
+  &.line6:before {
+    content: "6";
+    background: #a3723d;
+  }
+  &.line7:before {
+    content: "7";
+    background: #5e6f40;
+  }
+  &.line8:before {
+    content: "8";
+    background: #de546d;
+  }
+  &.line9:before {
+    content: "9";
+    background: #a7883c;
+  }
+  &.bundang:before {
+    content: "분당";
+    background: #f5c72c;
+  }
+  &.sinbundang:before {
+    content: "신분당";
+    background: #b2333e;
+  }
+  &.jungang:before {
+    content: "중앙";
+    background: #5abcc1;
+  }
+  &.kyeong:before {
+    content: "경의";
+    background: #5abcc1;
+  }
+  &.chun:before {
+    content: "경춘";
+    background: #008989;
+  }
+  &.airport:before {
+    content: "공항철도";
+    background: #008989;
+  }
+}
+
+span.collage {
+  line-height: 1.7rem;
+  color: @soft-blue;
+
+  &:before {
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.7rem;
+    /* margin-right: 0.5rem; */
+    padding: 1.7rem 1.7rem 0 0;
+    font-size: 1.2rem;
+    content: '';
+    background:url("../images/school.jpg") no-repeat no-repeat center center;
+    background-size: 1.7rem;
+  }
+}
+
+.hash-tag-list {
+  font-size: 1.2rem;
+  color: @windows-blue;
+
+  span {
+    padding: 0 0.6rem;
+
+    &:first-child {
+      padding: 0 0.6rem 0 0;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  span.collage {
+    line-height: 1;
+    &:before {
+      line-height: 1;
+      background-size: 1.5rem 1rem;
+      padding: 1rem 1.5rem 0 0;
+    }
+  }
+}
+

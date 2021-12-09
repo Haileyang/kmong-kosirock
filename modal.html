@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <!-- 기존 css -->
+    <link rel="stylesheet" href="/public/css/environments.css">
+    <link rel="stylesheet" href="/public/css/global.css">
+    <link rel="stylesheet" href="/public/css/mapOverlay.css">
+    <link rel="stylesheet" href="/public/css/palette.css">
+
+    <!-- raon 추가  -->
+    <link rel="stylesheet" href="/public/css/new-style.css">
+    <script defer src="/public/js/main.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- rolling js -->
+    <script type="text/javascript" src="/public/lib/rolling/js/jquery.js"></script>
+    <script type="text/javascript" src="/public/lib/rolling/js/acmeticker.js"></script>
+    <link rel="stylesheet" href="/public/lib/rolling/css/style.css">
+
+
+</head>
+
+<body>
+     <!-- ===================  Modal =================== -->
+     <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+     <div id="ex1" class="modal event-modal">
+         <div class="new-modal-header flex-b--c ">
+             <h3>고시원 이벤트 알림</h3>
+             <a href="#" rel="modal:close">
+                 <span class="text-indent">Close</span>
+             </a>
+         </div>
+         <div class="new-modal-content flex-b--c">
+             <div class="new-modal-left">
+                 <strong class="intro-qoute">
+                     안녕하세요. <br> <span class="font-blue">고시락</span>입니다.</strong>
+
+                 <p>
+                     <strong class="font-blue">휴식 홍대점</strong> 에서 <br>
+                     <strong>입실 이벤트</strong> 진행 중이오니 <br>
+                     많은 참여 부탁드립니다.
+                 </p>
+             </div>
+             <div class="new-modal-right">
+                 <figure>
+                     <img src="/public/img/new-img/modal-img-sample.jpg" alt="이벤트 중인 고시원 사진">
+                     <strong class="event-room-name">휴식 홍대점</strong>
+                 </figure>
+             </div>
+         </div>
+     </div>
+</body>
+</html>

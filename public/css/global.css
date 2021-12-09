@@ -1,0 +1,374 @@
+/*
+ * Copyright Huesik (c) 2019.
+ */
+/*
+ * Copyright Huesik (c) 2019.
+ */
+/* Color palette */
+/*
+ * Copyright Huesik (c) 2019.
+ */
+span.subway {
+  line-height: 1.2rem;
+}
+span.subway:before {
+  vertical-align: middle;
+  display: inline-block;
+  min-width: 1.2rem;
+  height: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2rem;
+  border-radius: 1.2rem;
+  /* margin-right: 0.5rem; */
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  margin: 0 0.3rem 0 0;
+}
+span.subway.line1 {
+  color: #1b3883;
+}
+span.subway.line2 {
+  color: #00a551;
+}
+span.subway.line3 {
+  color: #e37628;
+}
+span.subway.line4 {
+  color: #00a5db;
+}
+span.subway.line5 {
+  color: #954d90;
+}
+span.subway.line6 {
+  color: #a3723d;
+}
+span.subway.line7 {
+  color: #5e6f40;
+}
+span.subway.line8 {
+  color: #de546d;
+}
+span.subway.line9 {
+  color: #a7883c;
+}
+span.subway.bundang {
+  color: #f5c72c;
+}
+span.subway.sinbundang {
+  color: #b2333e;
+}
+span.subway.jungang {
+  color: #5abcc1;
+}
+span.subway.kyeong {
+  color: #5abcc1;
+}
+span.subway.chun {
+  color: #008989;
+}
+span.subway.airport {
+  color: #008989;
+}
+span.subway.line1:before {
+  content: "1";
+  background: #1b3883;
+}
+span.subway.line2:before {
+  content: "2";
+  background: #00a551;
+}
+span.subway.line3:before {
+  content: "3";
+  background: #e37628;
+}
+span.subway.line4:before {
+  content: "4";
+  background: #00a5db;
+}
+span.subway.line5:before {
+  content: "5";
+  background: #954d90;
+}
+span.subway.line6:before {
+  content: "6";
+  background: #a3723d;
+}
+span.subway.line7:before {
+  content: "7";
+  background: #5e6f40;
+}
+span.subway.line8:before {
+  content: "8";
+  background: #de546d;
+}
+span.subway.line9:before {
+  content: "9";
+  background: #a7883c;
+}
+span.subway.bundang:before {
+  content: "분당";
+  background: #f5c72c;
+}
+span.subway.sinbundang:before {
+  content: "신분당";
+  background: #b2333e;
+}
+span.subway.jungang:before {
+  content: "중앙";
+  background: #5abcc1;
+}
+span.subway.kyeong:before {
+  content: "경의";
+  background: #5abcc1;
+}
+span.subway.chun:before {
+  content: "경춘";
+  background: #008989;
+}
+span.subway.airport:before {
+  content: "공항철도";
+  background: #008989;
+}
+span.collage {
+  line-height: 1.7rem;
+  color: #7ca9df;
+}
+span.collage:before {
+  vertical-align: middle;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.7rem;
+  /* margin-right: 0.5rem; */
+  padding: 1.7rem 1.7rem 0 0;
+  font-size: 1.2rem;
+  content: '';
+  background: url("../images/school.jpg") no-repeat no-repeat center center;
+  background-size: 1.7rem;
+}
+.hash-tag-list {
+  font-size: 1.2rem;
+  color: #3c6bbb;
+}
+.hash-tag-list span {
+  padding: 0 0.6rem;
+}
+.hash-tag-list span:first-child {
+  padding: 0 0.6rem 0 0;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  span.collage {
+    line-height: 1;
+  }
+  span.collage:before {
+    line-height: 1;
+    background-size: 1.5rem 1rem;
+    padding: 1rem 1.5rem 0 0;
+  }
+}
+/*
+ * Copyright Huesik (c) 2019.
+ */
+.cityAndStateOverlay {
+  max-height: 4rem;
+  color: white;
+  border-radius: 2rem;
+  line-height: 4rem;
+  background-color: #3c6bbb;
+  font-weight: bold;
+  text-align: center;
+}
+.cityAndStateOverlay span {
+  padding: 1.5rem 2rem;
+}
+.collagesAndSubwayOverlay {
+  max-height: 4rem;
+  color: #333333;
+  border-radius: 2rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.collagesAndSubwayOverlay:before {
+  line-height: 4.875rem;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  border-radius: 4rem;
+  z-index: 2;
+  position: relative;
+  top: 1.5rem;
+}
+.collagesAndSubwayOverlay.collages:before {
+  background-image: url("../images/ex-school.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  line-height: 5rem;
+  background-color: #00a081;
+  content: '';
+}
+.collagesAndSubwayOverlay.subway:before {
+  content: '';
+  background-image: url("../images/ex-subway.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  line-height: 5rem;
+  background-color: #ff8555;
+}
+.collagesAndSubwayOverlay span {
+  font-size: 1.4rem;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #cccccc;
+  max-height: 3rem;
+  border-radius: 1.5rem;
+  padding: 0.75rem 1.5rem 0.75rem 4rem;
+  margin-left: -4rem;
+  z-index: 1;
+  /* line-height: 4rem; */
+  /* line-height: 1.5; */
+}
+@media screen and (max-width: 768px) {
+  .collagesAndSubwayOverlay:before {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 6rem;
+    top: 2.5rem;
+  }
+  .collagesAndSubwayOverlay.collages:before {
+    background-image: url('../../assets/images/ex-school@3x.png');
+    background-size: 2.5rem 3rem;
+  }
+  .collagesAndSubwayOverlay.subway:before {
+    background-image: url('../../assets/images/ex-subway@3x.png');
+    background-size: 2.5rem 3rem;
+  }
+}
+html {
+  font-size: 10px;
+}
+body,
+button,
+input,
+select,
+table,
+textarea {
+  font-family: 'Nanum Square', "Apple SD Gothic Neo", sans-serif;
+  color: #333333;
+  font-size: 1.6rem;
+  border: 0;
+}
+body {
+  background-color: #f2f2f2;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+  margin: 0;
+}
+input {
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+input:focus {
+  outline: none;
+}
+a {
+  color: #333333;
+  text-decoration: none;
+  outline: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.margin-auto {
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.flex.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.justify-space-between {
+  justify-content: space-between;
+}
+.show-sm-only {
+  display: none !important;
+}
+.show-lg-only {
+  display: inherit;
+}
+.not-show-lg {
+  display: none !important;
+}
+.not-show-sm {
+  display: inherit;
+}
+.not-show-sm.flex {
+  display: flex;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.bb-0 {
+  border-bottom: 0 !important;
+}
+@media screen and (max-width: 1366px) {
+  .show-lg-only {
+    display: none;
+  }
+  .not-show-lg {
+    display: inherit !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+    font-size: 8px;
+  }
+  .show-sm-only {
+    display: inherit !important;
+  }
+  .show-sm-only.flex {
+    display: flex !important;
+  }
+  .not-show-sm {
+    display: none !important;
+  }
+  .not-show-lg {
+    display: inherit !important;
+  }
+  .show-lg-only {
+    display: none;
+  }
+}
+*:not(input):not(textarea) {
+  -webkit-touch-callout: none;
+  /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;
+  /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;
+  /* prevent copy paste, to allow, change 'none' to 'text' */
+  -ms-touch-callout: none;
+  -ms-user-select: none;
+  -ms-text-size-adjust: none;
+  -moz-touch-callout: none;
+  -moz-user-select: none;
+  -moz-text-size-adjust: none;
+}

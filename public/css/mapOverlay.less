@@ -1,0 +1,101 @@
+/*
+ * Copyright Huesik (c) 2019.
+ */
+@import './palette';
+
+.cityAndStateOverlay {
+  max-height: 4rem;
+  color: white;
+  border-radius: 2rem;
+  line-height: 4rem;
+  background-color: @windows-blue;
+  font-weight: bold;
+  text-align: center;
+  span {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.collagesAndSubwayOverlay {
+  max-height: 4rem;
+  color: @black-two;
+  border-radius: 2rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+
+  &:before{
+    line-height: 4.875rem;
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    border-radius: 4rem;
+    z-index: 2;
+    position: relative;
+    top: 1.5rem;
+  }
+
+  &.collages {
+    &:before {
+      background-image: url("../images/ex-school.png");
+      background-repeat: no-repeat no-repeat;
+      background-position: center center;
+      line-height: 5rem;
+      background-color: @teal;
+      content: '';
+    }
+  }
+
+  &.subway {
+    &:before {
+      content: '';
+      background-image: url("../images/ex-subway.png");
+      background-repeat: no-repeat no-repeat;
+      background-position: center center;
+      line-height: 5rem;
+      background-color: @melon;
+    }
+  }
+
+  span {
+    //padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    position: relative;
+    display: inline-block;
+    background-color:white;
+    border: 1px solid @very-light-pink-two;
+    max-height:3rem;
+    border-radius: 1.5rem;
+    padding: 0.75rem 1.5rem 0.75rem 4rem;
+    margin-left: -4rem;
+    z-index: 1;
+    /* line-height: 4rem; */
+    /* line-height: 1.5; */
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collagesAndSubwayOverlay {
+    &:before{
+      width: 6rem;
+      height: 6rem;
+      border-radius: 6rem;
+      top: 2.5rem;
+    }
+
+    &.collages {
+      &:before {
+        background-image: url('../../assets/images/ex-school@3x.png');
+        background-size: 2.5rem 3rem;
+      }
+    }
+
+    &.subway {
+      &:before {
+        background-image: url('../../assets/images/ex-subway@3x.png');
+        background-size: 2.5rem 3rem;
+      }
+    }
+  }
+}

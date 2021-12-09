@@ -1,0 +1,137 @@
+/*
+ * Copyright Huesik (c) 2019.
+ */
+
+@import "palette";
+@import "environments";
+@import "mapOverlay";
+
+html {
+    font-size: 10px;
+}
+
+body, button, input, select, table, textarea {
+    font-family: 'Nanum Square', "Apple SD Gothic Neo", sans-serif;
+    color: @black-two;
+    font-size:1.6rem;
+    border: 0;
+}
+
+body {
+    background-color: @very-light-pink;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6,
+input {
+    margin: 0;
+}
+
+input {
+    font-family: "Apple SD Gothic Neo", sans-serif;
+    &:focus {
+        outline:none;
+    }
+}
+
+a {
+    color: @black-two; text-decoration: none; outline: none
+}
+
+a:hover, a:active {text-decoration: none; }
+.margin-auto {
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+
+    &.flex-center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+    &.justify-space-between {
+        justify-content: space-between;
+    }
+}
+
+.show-sm-only {
+    display: none !important;
+}
+
+.show-lg-only {
+    display: inherit;
+}
+
+.not-show-lg {
+    display: none !important;
+}
+
+.not-show-sm {
+    display: inherit;
+    &.flex {
+        display: flex;
+    }
+}
+
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.bb-0 {
+    border-bottom: 0 !important;
+}
+
+@media screen and (max-width: 1366px) {
+    .show-lg-only {
+        display: none;
+    }
+
+    .not-show-lg {
+        display: inherit !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+        font-size: 8px;
+    }
+
+    .show-sm-only {
+        display: inherit !important;
+        &.flex {
+            display: flex !important;
+        }
+    }
+    .not-show-sm {
+        display: none !important;
+    }
+    .not-show-lg {
+        display: inherit !important;
+    }
+    .show-lg-only {
+        display: none;
+    }
+}
+
+*:not(input):not(textarea) {
+    -webkit-touch-callout: none;    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;      /* prevent copy paste, to allow, change 'none' to 'text' */
+    -ms-touch-callout: none;
+    -ms-user-select: none;
+    -ms-text-size-adjust: none;
+    -moz-touch-callout: none;
+    -moz-user-select: none;
+    -moz-text-size-adjust: none;
+}
+

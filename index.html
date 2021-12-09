@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고시락</title>
+    <!-- 기존 css -->
+    <link rel="stylesheet" href="/public/css/environments.css">
+    <link rel="stylesheet" href="/public/css/global.css">
+    <link rel="stylesheet" href="/public/css/mapOverlay.css">
+    <link rel="stylesheet" href="/public/css/palette.css">
+
+    <!-- raon 추가  -->
+    <link rel="stylesheet" href="/public/css/new-style.css">
+    <script defer src="/public/js/main.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- rolling js -->
+    <script type="text/javascript" src="/public/lib/rolling/js/jquery.js"></script>
+    <script type="text/javascript" src="/public/lib/rolling/js/acmeticker.js"></script>
+    <link rel="stylesheet" href="/public/lib/rolling/css/style.css">
+
+
+</head>
+
+<body>
+    <div class="new-body">
+        <div class="new-content new-inr">
+            <!-- =================== header =================== -->
+            <header class="new-header" id="new-header">
+                <div class="new-inrContent wh-100 flex-b--c">
+                    <div class="header-left flex-s--c">
+                        <figure class="logo-wrap">
+                            <img src="/public/img/new-img/g-logo.png" alt="고시락 로고" class="logo">
+                            <span class="text-indent">고시락</span>
+                        </figure>
+                        <span class="download-btn">
+                            <a href="">고시락 홍보 방법</a>
+                        </span>
+                    </div>
+                    <div class="header-right">
+                        <ul class="gnb-wrap d-inlineflex">
+                            <li class="gnb-list"><a href="">지도로 찾기</a></li>
+                            <li class="gnb-list"><a href="">관심 목록</a></li>
+                            <li class="gnb-list"><a href="">고시원 올리기</a></li>
+                            <li class="gnb-list"><a href="">고시원 매매 문의</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- =================== main content =================== -->
+            <main id="new-container">
+
+                <!-- =================== section - 0 : search =================== -->
+                <section class="section-0 ">
+                    <div class="new-inrContent">
+                        <h1><span class="font-engNum font-upper">No. 1</span> 고시원 정보 브랜드 <br> 고시원 찾을땐?</h1>
+                        <span class="search-wrap">
+                            <input type="text" placeholder="지역명, 지하철명, 대학교명을 입력하세요.">
+                            <button type="submit">
+                                <figure class="icon-search"><img src="/public/img/new-img/icon-search.png" alt="검색아이콘">
+                                </figure>
+                                <span class="text-indent">검색</span>
+                            </button>
+                            <span class="brand-name">고시락</span>
+                        </span>
+                    </div>
+                </section>
+                <!-- =================== section - 1 & 2 : popular and event =================== -->
+                <article class="section">
+                    <section class="section-1">
+                        <div class="new-inrContent">
+                            <div class="section-tit-wrap">
+                                <h2>실시간 인기 고시원</h2>
+                            </div>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="new-inrContent popular-swiper">
+                            <div class="swiper popular-items-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="popular-item">
+                                            <a href="">
+                                                <figure class="popular-item__figure">
+                                                    <span class="popular-item__num">1</span>
+                                                    <img src="/public/img/new-img/popular-sample.png"
+                                                        alt="실시간 인기 고시원 사진">
+                                                    <strong class="popular-item__name">휴식 잠실점</strong>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="popular-item">
+                                            <a href="">
+                                                <figure class="popular-item__figure">
+                                                    <span class="popular-item__num">1</span>
+                                                    <img src="/public/img/new-img/popular-sample.png"
+                                                        alt="실시간 인기 고시원 사진">
+                                                    <strong class="popular-item__name">휴식 잠실점</strong>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="popular-item">
+                                            <a href="">
+                                                <figure class="popular-item__figure">
+                                                    <span class="popular-item__num">1</span>
+                                                    <img src="/public/img/new-img/popular-sample.png"
+                                                        alt="실시간 인기 고시원 사진">
+                                                    <strong class="popular-item__name">휴식 잠실점</strong>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="popular-item">
+                                            <a href="">
+                                                <figure class="popular-item__figure">
+                                                    <span class="popular-item__num">1</span>
+                                                    <img src="/public/img/new-img/popular-sample.png"
+                                                        alt="실시간 인기 고시원 사진">
+                                                    <strong class="popular-item__name">휴식 잠실점</strong>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="popular-item">
+                                            <a href="">
+                                                <figure class="popular-item__figure">
+                                                    <span class="popular-item__num">1</span>
+                                                    <img src="/public/img/new-img/popular-sample.png"
+                                                        alt="실시간 인기 고시원 사진">
+                                                    <strong class="popular-item__name">휴식 잠실점</strong>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="section-2">
+                        <div class="new-inrContent">
+                            <div class="section-tit-wrap flex-b--c">
+                                <h2>고시원 소식</h2>
+                                <span class="more">
+                                    <a href="">더보기</a>
+                                </span>
+                            </div>
+                            <!-- rolling event -->
+                            <div class="acme-news-ticker">
+                                <div class="acme-news-ticker-box ">
+                                    <ul class="rolling-event__wrap my-news-ticker">
+                                        <li class="rolling-event__list flex-s--c wh-100">
+                                            <a href="">
+                                                <b class="font-engNum">Event</b>
+                                                휴식 잠실점 오픈 이벤트
+                                            </a>
+                                        </li>
+                                        <li class="rolling-event__list flex-s--c wh-100">
+                                            <a href="">
+                                                <b class="font-engNum">Notice</b>
+                                                고시락에 홍보하는 방법 알려드려요
+                                            </a>
+                                        </li>
+                                        <li class="rolling-event__list flex-s--c wh-100">
+                                            <a href="">
+                                                <b class="font-engNum">Notice</b>
+                                                고시락 창업 방법은 휴식! 가맹 방법을 알려드려요
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <!-- =================== section - 3 : theme =================== -->
+                <section class="section-3 section">
+                    <div class="new-inrContent">
+                        <div class="section-tit-wrap flex-b--c">
+                            <h2>휴식 테마별 고시원!</h2>
+                            <div class="swiper-pagination theme-swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper theme-swiper one-swiper">
+                        <div class="swiper-button-prev theme-swiper-button-prev"></div>
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="theme-item">
+                                    <a href="">
+                                        <figure class="theme-item__figure">
+                                            <img src="/public/img/new-img/theme-sample.jpg" alt="테마별 고시원 사진">
+                                        </figure>
+                                        <dl>
+                                            <dt>혼자 산다고 대충 먹지 말자!</dt>
+                                            <dd>혼자 산다고 대충 먹지 말자!혼자 산다고 대충 먹지 말자!혼자 산다고 대충 먹지 말자!</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="theme-item">
+                                    <a href="">
+                                        <figure class="theme-item__figure">
+                                            <img src="/public/img/new-img/theme-sample.jpg" alt="테마별 고시원 사진">
+                                        </figure>
+                                        <dl>
+                                            <dt>혼자 산다고 대충 먹지 말자!</dt>
+                                            <dd>혼자 산다고 대충 먹지 말자!혼자 산다고 대충 먹지 말자!혼자 산다고 대충 먹지 말자!</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="theme-item">
+                                    <a href="">
+                                        <figure class="theme-item__figure">
+                                            <img src="/public/img/new-img/theme-sample.jpg" alt="테마별 고시원 사진">
+                                        </figure>
+                                        <dl>
+                                            <dt>혼자 산다고 대충 먹지 말자!</dt>
+                                            <dd>혼자 산다고 대충 먹지 말자!혼자 산다고 대충 먹지 말자!혼자 산다고 대충 먹지 말자!</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="swiper-button-next theme-swiper-button-next"></div>
+                    </div>
+
+                </section>
+                <!-- =================== section - 4 : best =================== -->
+                <section class="section-4  section">
+                    <div class="new-inrContent">
+                        <div class="section-tit-wrap  flex-b--c">
+                            <h2>추천&관심 고시원</h2>
+                            <div class="arrowSlider">
+                                <span class="prev" id="aro1_prev">prev</span>
+                                <span class="next" id="aro1_next">next</span>
+                            </div>
+                        </div>
+
+                        <div class="slick-wrapper room-swiper">
+                            <div id="slick1">
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="slide-item">
+                                    <div class="room-item">
+                                        <a href="">
+                                            <div class="ribon-wrap">
+                                                <span class="ribon best">
+                                                    <figure><img src="/public/img/new-img/label-best.png"
+                                                            alt="베스트 리본 이미지"></figure>
+                                                    <span class="text-indent">Best</span>
+                                                </span>
+                                                <span class="ribon Event hidden">
+                                                    <figure><img src="/public/img/new-img/label-event.png"
+                                                            alt="이벤트 리본 이미지"></figure>
+                                                    <span class="text-indent">event</span>
+                                                </span>
+                                            </div>
+                                            <figure class="room-item__figure">
+
+                                                <img src="/public/img/new-img/room-sample.jpg" alt="객실 이미지">
+                                                <span class="heart-wrap">
+                                                    <figure class="heart-empty "><img
+                                                            src="/public/img/new-img/icon-heart-default.png"
+                                                            alt="하트 기본 이미지"></figure>
+                                                    <figure class="heart-full hidden"><img
+                                                            src="/public/img/new-img/icon-heart-active.png"
+                                                            alt="하트 찜한 이미지"></figure>
+                                                </span>
+                                            </figure>
+                                            <div class="room-txt">
+                                                <dl>
+                                                    <dt class="flex-b--c">
+                                                        <span> 휴식 잠실점</span>
+                                                        <strong class="room-rent">
+                                                            <div class="font-engNum"> 60~65 </div> 만원 /
+                                                            <small>월</small>
+                                                        </strong>
+                                                    </dt>
+                                                    <dd>21년 12월 신규 오픈 신촌역 도보 5분 프리미엄 레지던스휴식입니다. 입주 이벤트를 진행 중이오니 많은 관
+                                                        ...
+                                                    </dd>
+                                                </dl>
+                                                <ul class="train-wrap">
+                                                    <li class="train-list">
+                                                        <div class="line-circles ">
+                                                            <span class="line-circle line2">2</span>
+                                                            <span class="line-circle line2">2</span>
+                                                        </div>
+                                                        <span class="line-name">잠실</span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hashtag-wrap d-flex">
+                                                    <li class="hashtag-list">#여성전용</li>
+                                                    <li class="hashtag-list">#미니룸</li>
+                                                    <li class="hashtag-list">#샤워룸</li>
+                                                    <li class="hashtag-list">#원룸</li>
+                                                    <li class="hashtag-list">#엘리베이터</li>
+                                                    <li class="hashtag-list">#CCTV</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- =================== section - 5 : tips =================== -->
+                <section class="section-5 section">
+                    <div class="new-inrContent">
+                        <div class="section-tit-wrap flex-b--c">
+                            <h2>휴식 <span class="font-engNum">TIPS</span></h2>
+                            <div class="swiper-pagination-wrap">
+                                <div class="swiper-button-prev tips-swiper-button-prev"></div>
+                                <div class="swiper-button-next tips-swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper one-swiper tips-swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <figure><img src="/public/img/new-img/tips-sample.jpg" alt="휴식팁 샘플 이미지"></figure>
+                                </li>
+                                <li class="swiper-slide">
+                                    <figure><img src="/public/img/new-img/tips-sample.jpg" alt="휴식팁 샘플 이미지"></figure>
+                                </li>
+                                <li class="swiper-slide">
+                                    <figure><img src="/public/img/new-img/tips-sample.jpg" alt="휴식팁 샘플 이미지"></figure>
+                                </li>
+                                <li class="swiper-slide">
+                                    <figure><img src="/public/img/new-img/tips-sample.jpg" alt="휴식팁 샘플 이미지"></figure>
+                                </li>
+                                <li class="swiper-slide">
+                                    <figure><img src="/public/img/new-img/tips-sample.jpg" alt="휴식팁 샘플 이미지"></figure>
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination tips-swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- ===================  footer =================== -->
+            <footer id="new-footer">
+                <div class="new-inrContent d-flex">
+                    <figure class="logo-wrap"><img src="/public/img/new-img/f-logo.png" alt="휴식 로고"></figure>
+                    <div class="footer-content">
+                        <ul class="footer-info-wrap">
+                            <li class="footer-info-list">상호명 : 주식회사 휴식</li>
+                            <li class="footer-info-list">대표 : 김환종</li>
+                            <li class="footer-info-list">사업자 등록번호 : 646-86-01056</li>
+                            <li class="footer-info-list add"><span>주소 : </span>서울특별시 노원구 공릉동 동일로 174길 27 <br
+                                    class="mBr"> 서울창업디딤터 309호</li>
+                            <li class="footer-info-list">이메일 : official@huesik.co.kr</li>
+                            <li class="footer-info-list">문의 : 02-911-9051</li>
+                        </ul>
+                        <p class="copy">Copyright HUESIK All Right Reserved</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- =================== mobile tab =================== -->
+            <nav class="mobile-tab">
+                <ul class="flex-s--c wh-100">
+                    <li class="is_active">
+                        <a href="">
+                            <figure>
+                                <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 22C24 22.2652 23.8946 22.5196 23.7071 22.7071C23.5196 22.8947 23.2652 23 23 23H7C6.73478 23 6.48043 22.8947 6.29289 22.7071C6.10536 22.5196 6 22.2652 6 22V11.49C5.99989 11.3376 6.03462 11.1872 6.10152 11.0503C6.16841 10.9134 6.26572 10.7936 6.386 10.7L14.386 4.47803C14.5615 4.34147 14.7776 4.26733 15 4.26733C15.2224 4.26733 15.4385 4.34147 15.614 4.47803L23.614 10.7C23.7343 10.7936 23.8316 10.9134 23.8985 11.0503C23.9654 11.1872 24.0001 11.3376 24 11.49V22ZM22 21V12.9562C22 12.339 21.715 11.7564 21.2278 11.3775L16.2278 7.48892C15.5056 6.92726 14.4944 6.92726 13.7722 7.48892L8.77218 11.3775C8.28497 11.7564 8 12.339 8 12.9562V21H22Z"
+                                        fill="#888" />
+                                </svg>
+                            </figure>
+                            <span class="font-engNum">home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>
+                                <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 15C16.6569 15 18 13.6569 18 12C18 10.3431 16.6569 9 15 9C13.3431 9 12 10.3431 12 12C12 13.6569 13.3431 15 15 15Z"
+                                        stroke="#888888" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M15 4C12.8783 4 10.8434 4.84285 9.34315 6.34315C7.84285 7.84344 7 9.87827 7 12C7 13.892 7.402 15.13 8.5 16.5L15 24L21.5 16.5C22.598 15.13 23 13.892 23 12C23 9.87827 22.1571 7.84344 20.6569 6.34315C19.1566 4.84285 17.1217 4 15 4V4Z"
+                                        stroke="#888888" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </figure>
+                            <span>지도로찾기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>
+                                <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 23C14.355 22.428 13.626 21.833 12.855 21.2H12.845C10.13 18.98 7.05301 16.468 5.69401 13.458C5.24801 12.5 5.01101 11.458 5.00001 10.4C4.99853 9.68201 5.14052 8.97093 5.41765 8.30855C5.69478 7.64616 6.10147 7.04583 6.61382 6.54279C7.12617 6.03975 7.73387 5.64416 8.40122 5.37922C9.06858 5.11429 9.78214 4.98537 10.5 5.00002C11.6806 5.00189 12.8358 5.34311 13.828 5.98302C14.264 6.26599 14.6584 6.60828 15 7.00002C15.344 6.61002 15.738 6.26802 16.173 5.98302C17.1647 5.34298 18.3197 5.00174 19.5 5.00002C20.2179 4.98537 20.9314 5.11429 21.5988 5.37922C22.2662 5.64416 22.8739 6.03975 23.3862 6.54279C23.8986 7.04583 24.3052 7.64616 24.5824 8.30855C24.8595 8.97093 25.0015 9.68201 25 10.4C24.9898 11.4588 24.7532 12.5032 24.306 13.463C22.947 16.473 19.871 18.984 17.156 21.2L17.146 21.208C16.374 21.837 15.646 22.432 15.001 23.008L15 23ZM10.5 7.00002C9.56852 6.98837 8.67008 7.34487 8.00001 7.99202C7.68047 8.3059 7.42728 8.68081 7.25549 9.09448C7.0837 9.50814 6.99682 9.95212 7.00001 10.4C7.01101 11.17 7.18601 11.93 7.51201 12.628C8.15354 13.9267 9.01914 15.1021 10.069 16.1C11.06 17.1 12.2 18.068 13.186 18.882C13.459 19.107 13.737 19.334 14.015 19.561L14.19 19.704C14.457 19.922 14.733 20.148 15 20.37L15.013 20.358L15.019 20.353H15.025L15.034 20.346H15.044L15.062 20.331L15.103 20.298L15.11 20.292L15.121 20.284H15.127L15.136 20.276L15.8 19.731L15.974 19.588C16.255 19.359 16.533 19.132 16.806 18.907C17.792 18.093 18.933 17.126 19.924 16.121C20.9741 15.1236 21.8397 13.9486 22.481 12.65C22.813 11.946 22.991 11.178 23.001 10.4C23.0029 9.9534 22.9154 9.51092 22.7434 9.09871C22.5715 8.6865 22.3187 8.31291 22 8.00002C21.3312 7.34994 20.4326 6.99051 19.5 7.00002C18.9373 6.99524 18.38 7.10958 17.8647 7.33554C17.3494 7.56149 16.8877 7.89393 16.51 8.31102L15 10.051L13.49 8.31102C13.1123 7.89393 12.6506 7.56149 12.1353 7.33554C11.62 7.10958 11.0627 6.99524 10.5 7.00002Z"
+                                        fill="#888888" />
+                                </svg>
+                            </figure>
+                            <span>관심</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>
+                                <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.7143 15.4286C11.0932 15.4286 11.4565 15.2781 11.7244 15.0102C11.9923 14.7422 12.1429 14.3789 12.1429 14C12.1429 13.6211 11.9923 13.2578 11.7244 12.9898C11.4565 12.7219 11.0932 12.5714 10.7143 12.5714C10.3354 12.5714 9.97204 12.7219 9.70413 12.9898C9.43622 13.2578 9.28571 13.6211 9.28571 14C9.28571 14.3789 9.43622 14.7422 9.70413 15.0102C9.97204 15.2781 10.3354 15.4286 10.7143 15.4286ZM15 15.4286C15.3789 15.4286 15.7422 15.2781 16.0102 15.0102C16.2781 14.7422 16.4286 14.3789 16.4286 14C16.4286 13.6211 16.2781 13.2578 16.0102 12.9898C15.7422 12.7219 15.3789 12.5714 15 12.5714C14.6211 12.5714 14.2578 12.7219 13.9898 12.9898C13.7219 13.2578 13.5714 13.6211 13.5714 14C13.5714 14.3789 13.7219 14.7422 13.9898 15.0102C14.2578 15.2781 14.6211 15.4286 15 15.4286ZM20.7143 14C20.7143 14.3789 20.5638 14.7422 20.2959 15.0102C20.028 15.2781 19.6646 15.4286 19.2857 15.4286C18.9068 15.4286 18.5435 15.2781 18.2756 15.0102C18.0077 14.7422 17.8571 14.3789 17.8571 14C17.8571 13.6211 18.0077 13.2578 18.2756 12.9898C18.5435 12.7219 18.9068 12.5714 19.2857 12.5714C19.6646 12.5714 20.028 12.7219 20.2959 12.9898C20.5638 13.2578 20.7143 13.6211 20.7143 14ZM25 14C25 19.5229 20.5229 24 15 24C9.47714 24 5 19.5229 5 14C5 8.47714 9.47714 4 15 4C20.5229 4 25 8.47714 25 14ZM23.5714 14C23.5714 9.26643 19.7336 5.42857 15 5.42857C10.2664 5.42857 6.42857 9.26643 6.42857 14C6.42857 18.7336 10.2664 22.5714 15 22.5714C19.7336 22.5714 23.5714 18.7336 23.5714 14Z"
+                                        fill="#888888" />
+                                </svg>
+                            </figure>
+                            <span>더보기</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- ===================  Modal =================== -->
+            <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+            <div id="ex1" class="modal event-modal">
+                <div class="new-modal-header flex-b--c ">
+                    <h3>고시원 이벤트 알림</h3>
+                    <a href="#" rel="modal:close" class="close-modal">
+                        <span class="text-indent">Close</span>
+                    </a>
+                </div>
+                <div class="new-modal-content flex-b--c">
+                    <div class="new-modal-left">
+                        <strong class="intro-qoute">
+                            안녕하세요. <br> <span class="font-blue">고시락</span>입니다.</strong>
+
+                        <p>
+                            <strong class="font-blue">휴식 홍대점</strong> 에서 <br>
+                            <strong>입실 이벤트</strong> 진행 중이오니 <br>
+                            많은 참여 부탁드립니다.
+                        </p>
+                    </div>
+                    <div class="new-modal-right">
+                        <figure>
+                            <img src="/public/img/new-img/modal-img-sample.jpg" alt="이벤트 중인 고시원 사진">
+                            <strong class="event-room-name">휴식 홍대점</strong>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!-- ===================  loading =================== -->
+            <div class="loading-wrap">
+                <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+                        stroke="var(--secondary)" stroke-width="2"></path>
+                    <path
+                        d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+                        stroke="var(--secondary)" stroke-width="2"></path>
+                    <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+                    </path>
+                    <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
+                    <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <script>
+                // loading animation js
+                document.addEventListener("DOMContentLoaded", function(){
+                    document.querySelector('.loading-wrap').classList.add('on')
+                    document.querySelector('body').classList.add('loading')
+                });
+                window.addEventListener("load", function(){
+                    document.querySelector('.loading-wrap').classList.remove('on')
+                    document.querySelector('body').classList.remove('loading')
+                });
+            </script>
+
+
+
+</body>
+
+</html>
