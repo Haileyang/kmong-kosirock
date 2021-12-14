@@ -472,11 +472,11 @@ div {
     display: inline-block;
 }
 
-.theme-swiper {
+.theme-swiper,
+.tips-swiper {
     max-width: 750px;
     margin: 0 auto;
     padding: 0 16px;
-    ;
 }
 
 .swiper-pagination-wrap {
@@ -491,10 +491,10 @@ div {
     left: 0 !important;
 }
 
-.theme-swiper .swiper-button-next,
-.theme-swiper .swiper-button-prev {
-    width: 40px;
-    height: 40px;
+.swiper-button-next,
+.swiper-button-prev {
+    width: 40px; min-width: 40px;
+    height: 40px; max-height: 40px;
     border: 1px solid #3C6CBB;
     border-radius: 5px;
     background-color:#fff;
@@ -554,11 +554,11 @@ div {
     display: none;
 }
 
-.theme-swiper-pagination {
+.theme-swiper-pagination,
+.tips-swiper-pagination {
     width: auto !important;
     position: static !important;
 }
-.tips-swiper-pagination{bottom: 15px!important;}
 .swiper-pagination-bullet {
     margin: 0 !important;
     background-color: #ccc;
@@ -581,7 +581,8 @@ div {
     padding-bottom: 10px;
 }
 
-.theme-item {
+.theme-item,
+.tips-swiper li{
     overflow: hidden;
     background: #FFFFFF;
     padding: 0 16px 10px;
@@ -697,12 +698,6 @@ div {
     font-size: 12px;
     color: #666;
     font-weight: 400;
-    display: -webkit-box;
-    max-width: 100%;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    min-height: 35px;
 }
 
 .room-txt dt span {
@@ -816,10 +811,10 @@ div {
     .popular-item__num{width: 22px;height: 22px;
         font-size: 12px; line-height: 22px;
     }
-    .theme-swiper .swiper-button-next,
-    .theme-swiper .swiper-button-prev {
-        width: 30px;
-        height: 30px;
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px; min-width: 30px; max-width: 30px;
+        height: 30px; min-height: 30px; max-height: 30px;
     }
 
     .swiper-button-prev:before,
@@ -833,10 +828,7 @@ div {
     .theme-item dt{font-size: 14px;}
     .theme-item dd{font-size: 12px;}
     .tips-swiper figure, .tips-swiper{padding-bottom: 40%;}
-    .swiper-pagination-wrap .swiper-button-next, 
-    .swiper-pagination-wrap .swiper-button-prev, .slick-arrow{
-        width: 25px;height: 25px;
-    }
+   
 
 }
 
