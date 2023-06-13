@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고시락 고시원 신규 등록</title>
+    <!-- 기존 css -->
+    <link rel="stylesheet" href="/public/css/environments.css">
+    <link rel="stylesheet" href="/public/css/global.css">
+    <link rel="stylesheet" href="/public/css/mapOverlay.css">
+    <link rel="stylesheet" href="/public/css/palette.css">
+
+    <!-- raon 추가  -->
+    <link rel="stylesheet" href="/public/css/new-style.css">
+    <script defer src="/public/js/main.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- rolling js -->
+    <script type="text/javascript" src="/public/lib/rolling/js/jquery.js"></script>
+    <script type="text/javascript" src="/public/lib/rolling/js/acmeticker.js"></script>
+    <link rel="stylesheet" href="/public/lib/rolling/css/style.css">
+
+
+</head>
+
+<body>
+    <div class="new-body new-form">
+        <div class="new-content new-inr">
+            <!-- =================== header =================== -->
+            <header class="form-header">
+                <h1>고시락 고시원 신규 등록</h1>
+            </header>
+            <main id="new-container" class="new-form-container">
+                <figure class="form-logo"><img src="/public/img/new-img/form-logo.png" alt="고시락 로고" class="logo"></figure>
+                <form action="">
+                    <div class="d-flex">
+                        <div class="input-wrap error">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">고시원명</strong>
+                                <span class="inform">
+                                    <a class="tooltip-wrap">
+                                        <img src="/public/img/new-img/icon-inform.png" alt="inform icon">
+                                        <span class="tooltip-content">
+                                            고시원명이 ‘휴식 노원점’인 경우 고시원명에 휴식, 지점명에 노원점을 입력해주세요.
+                                        </span>
+                                    </a>
+                                </span>
+                            </label>
+                            <input type="text" placeholder="고시원명을 입력해 주세요.">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="">
+                                <strong class="label-text">지점명</strong>
+                            </label>
+                            <input type="text" placeholder="지점명을 입력해주세요.">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="input-wrap">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">주소</strong>
+                            </label>
+                            <input type="text" placeholder="클릭하여 주소를 검색해주세요.">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="">
+                                <strong class="label-text">고시원명</strong>
+                            </label>
+                            <input type="text" placeholder="고시원명을 입력해 주세요.">
+                        </div>
+                    </div>
+                    <div class="information-box-1">
+                        <div class="d-flex">
+                            <figure><img src="/public//img/new-img/icon-message.png" alt=""></figure>
+                            <p>지속적으로 “해당 주소는 Daum 지도에 표시되지 않아 위도/경도 값을 가져올 수 없습니다.” 라는 문구가 뜨게 된다면 <a href="">크롬 캐시 삭제 가이드</a>를 참고하여 진행 후 다시 시도해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="input-wrap">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">원장님 성함</strong>
+                            </label>
+                            <input type="text" placeholder="원장님 성함을 입력해 주세요.">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">사업자 번호</strong>
+                            </label>
+                            <input type="text" placeholder="사업자 번호를 입력해주세요.">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="input-wrap">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">고시원 유선번호</strong>
+                                <span class="inform">
+                                    <a class="tooltip-wrap">
+                                        <img src="/public/img/new-img/icon-inform.png" alt="inform icon">
+                                        <span class="tooltip-content">
+                                            고시원 유선번호
+                                        </span>
+                                    </a>
+                                </span>
+                            </label>
+                            <input type="text" placeholder="고시원 유선번호를 입력해 주세요.">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">담당자 휴대폰 번호</strong>
+                            </label>
+                            <input type="text" placeholder="고시원 담당자 휴대폰 번호를 입력해주세요.">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="input-wrap">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">가격 정보 (만원)</strong>
+                                <span class="inform">
+                                    <a class="tooltip-wrap">
+                                        <img src="/public/img/new-img/icon-inform.png" alt="inform icon">
+                                        <span class="tooltip-content">
+                                            가격 정보 (만원)
+                                        </span>
+                                    </a>
+                                </span>
+                            </label>
+                            <div class="d-flex">
+                                <input type="text" placeholder="최소 금액 (30)" style="margin-right:10px">
+                                <input type="text" placeholder="최대 금액 (40)">
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">보증금</strong>
+                            </label>
+                            <input type="text" placeholder="보증금을 입력해주세요.">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="input-wrap">
+                            <label for="">
+                                <strong class="label-text">홈페이지 URL</strong>
+                            </label>
+                            <input type="text" placeholder="홈페이지 URL을 입력해주세요.">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="">
+                                <strong class="label-text">층수</strong>
+                            </label>
+                            <div class="d-flex">
+                                <input type="text" placeholder="고시원 층수 (2 or 2~3)" style="margin-right:10px">
+                                <input type="text" placeholder="건물 총 층 수 룸">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="">
+                            <strong class="label-text">룸 타입 (다중 선택 가능)</strong>
+                        </label>
+                        <div class="d-flex" style="flex-wrap: wrap; padding: 10px 0 0 0 ">
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    미니룸
+                                </label>
+                            </span>
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    샤워룸
+                                </label>
+                            </span>
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    원룸
+                                </label>    
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="">
+                            <strong class="label-text">난방 타입 (다중 선택 가능)</strong>
+                        </label>
+                        <div class="d-flex" style="flex-wrap: wrap; padding: 10px 0 0 0 ">
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    없음
+                                </label>
+                            </span>
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    중앙난방
+                                </label>
+                            </span>
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    개인난방
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="">
+                            <strong class="label-text">고시원 옵션 (다중 선택 가능)</strong>
+                        </label>
+                        <div class="d-flex check-5" style="flex-wrap: wrap">
+                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    주차장
+                                </label>
+                            </span>
+                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    엘리베이터
+                                </label>
+                            </span>
+                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    식사 제공
+                                </label>
+                            </span>
+                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    개발 화장실
+                                </label>
+                            </span>
+                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    공용 세탁기
+                                </label>
+                            </span>
+                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    개별 인터넷
+                                </label>
+                            </span>
+                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    개별 도어락
+                                </label>
+                            </span>
+                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    에어컨
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="">
+                            <strong class="label-text">사용자 구분 (다중 선택 가능)</strong>
+                        </label>
+                        <div class="d-flex" style="flex-wrap: wrap; padding: 10px 0 0 0 ">
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    남녀 공용
+                                </label>
+                            </span>
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    남녀 층 분리
+                                </label>
+                            </span>
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    남성 전용
+                                </label>
+                            </span>
+                            <span class="checkbox-button">
+                                <input type="checkbox">
+                                <label for="">
+                                    <span class="checkmark"></span>
+                                    여성 전용
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="">
+                            <strong class="label-text">고시원 한줄 소개</strong>
+                        </label>
+                        <input type="text" placeholder="고시원 한줄 소개를 입력해 주세요.">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="">
+                            <strong class="label-text">고시원 상세 설명</strong>
+                        </label>
+                        <span style="font-size: 14px; color: #666; margin: 15px 0; display: block">
+                            예시 : 개인 시설 - 각 방마다 유선방송 무료 시청가능한 TV 설치 - 침대, 책상, 책꽂이, 옷장, 미니 냉장고<br>
+                            풀옵션 - 초고속 인터넷 및 Wi-Fi 설치 - 욕실/화장실 구비되어있는 원룸 공용 시설 - <br>
+                            주방 : 김치냉장고, 정수기, 전자레인지 - 세탁실 및 다림질실 - <br>
+                            소화기 및 화재 감지 시스템 - 밥, 김치, 라면, 계란, 커피, 녹차 무료제공
+                        </span>
+                        <textarea placeholder="고시원 상세 설명을 입력해 주세요."></textarea>
+                    </div>
+                    <div class="photo-wrap">
+                        <div class="input-wrap">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">고시원 썸네일</strong>
+                                <span class="inform">
+                                    <a class="tooltip-wrap">
+                                        <img src="/public/img/new-img/icon-inform.png" alt="inform icon">
+                                        <span class="tooltip-content">
+                                            <img src="/public/img/new-img/tooltip-content-img01.png" alt="tooltip-content-img01" style="display: block; height: 229px; width: 193px; margin: 0 auto">
+                                            지도 검색 시 대표 사진에 해당됩니다.
+                                        </span>
+                                    </a>
+                                </span>
+                            </label>
+                            <input type="text" placeholder="파일을 선택해 주세요">
+                            <button>파일선택</button>
+                        </div>
+                        <div class="thumb-nail">
+                            <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                            <button class="delete">
+                                <img src="/public/img/new-img/icon-trash.png" alt="trash">
+                                삭제
+                            </button>
+                        </div>
+                    </div>
+                    <div class="photo-wrap">
+                        <div class="input-wrap">
+                            <label for="">
+                                <span class="ast">*</span>
+                                <strong class="label-text">고시원 사진 정보 (10장 이내)</strong>
+                                <span class="inform">
+                                    <a class="tooltip-wrap">
+                                        <img src="/public/img/new-img/icon-inform.png" alt="inform icon">
+                                        <span class="tooltip-content">
+                                            고시원 사진 정보 (10장 이내)
+                                        </span>
+                                    </a>
+                                </span>
+                            </label>
+                            <input type="text" placeholder="파일을 선택해 주세요">
+                            <button>파일선택</button>
+                        </div>
+                        <ul class="photo-lists">
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                            <li class="photo-list">
+                                <figure><img src="/public/img/new-img/sample-img.jpg" alt=""></figure>
+                                <div class="button-wrap">
+                                    <button class="delete"><img src="/public/img/new-img/icon-trash.png" alt=""></button>
+                                    <button class="edit"><img src="/public/img/new-img/icon-pen.png" alt=""></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="information-box">
+                        <h3>고시락 신규 등록 안내 사항</h3>
+                        <ul class="information-lists">
+                            <li class="information-list">
+                                <figure><img src="/public/img/new-img/icon-email.png" alt="email"></figure>
+                                <p><a href="mailto: kosirock.winni@gmail.com">kosirock.winni@gmail.com</a></p>
+                            </li>
+                            <li class="information-list">
+                                <figure><img src="/public/img/new-img/icon-phone.png" alt="phone"></figure>
+                                <p><a href="tel:02-911-9051">02-911-9051</a></p>
+                            </li>
+                            <li class="information-list">
+                                <figure><img src="/public/img/new-img/icon-information.png" alt="information"></figure>
+                                <p>고시원 신규 등록 신청 후, 고시원 존재여부 / 내용 검수등을 통해서 승인처리시간이 소요될 수 있습니다.
+                                <b>승인이 완료되면 원장님께 메시지가 전달됩니다.</b></p>
+                            </li>
+                            <li class="information-list">
+                                <figure><img src="/public/img/new-img/icon-message.png" alt="message"></figure>
+                                <p><b>단, 무료 등록에는 제한이 있을 수 있습니다. </b>
+                                무료 등록 시, 문의 및 사용에 제한이 따를 수 있으며 패키지 가입 요청을 드릴 수 있습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="submit-button-wrap">
+                        <button class="submit" type="submit">신청하기</button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script>
+        let tooltips = [].slice.call(document.querySelectorAll('.tooltip-wrap'))
+
+        tooltips.forEach(function(tooltip) {
+        var tooltipSpan = tooltip.querySelector('.tooltip-content');
+
+        tooltip.onmousemove = function(e) {
+            var x = e.clientX,
+                y = e.clientY;
+            tooltipSpan.style.top = (y + 20) + 'px';
+            tooltipSpan.style.left = (x + 20) + 'px';
+        }
+        })
+    </script>
+</body>
+
+</html>
