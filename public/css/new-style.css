@@ -1116,10 +1116,12 @@ svg.tea {
 /* :::::::::::::::::::::: loading -end  :::::::::::::::::::::: */
 
 /* :::::::::::::::::::::: form -start  :::::::::::::::::::::: */
+.new-form{
+    padding: 50px 0;
+}
 .new-form .new-content{
     border-radius: 20px;
     overflow: hidden;
-    margin: 50px auto ;
 }
 .form-header{
     background-color: #3C6CBB;
@@ -1474,6 +1476,9 @@ img.hidden {
     display: block;
 }
 @media(max-width: 600px){
+    .new-form{
+        padding: 0;
+    }
     .form-header{
         padding: 15px;
     }
