@@ -179,7 +179,7 @@
                             <strong class="label-text">룸 타입 (다중 선택 가능)</strong>
                         </label>
                         <div class="d-flex" style="flex-wrap: wrap; padding: 10px 0 0 0 ">
-                            <span class="checkbox-button">
+                            <span class="checkbox-button checked">
                                 <input type="checkbox">
                                 <label for="">
                                     <span class="checkmark"></span>
@@ -207,7 +207,7 @@
                             <strong class="label-text">난방 타입 (다중 선택 가능)</strong>
                         </label>
                         <div class="d-flex" style="flex-wrap: wrap; padding: 10px 0 0 0 ">
-                            <span class="checkbox-button">
+                            <span class="checkbox-button checked">
                                 <input type="checkbox">
                                 <label for="">
                                     <span class="checkmark"></span>
@@ -235,21 +235,21 @@
                             <strong class="label-text">고시원 옵션 (다중 선택 가능)</strong>
                         </label>
                         <div class="d-flex check-5" style="flex-wrap: wrap">
-                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                            <span class="checkbox-button checked" style="width: calc(100%/5 - 10px); flex: none">
                                 <input type="checkbox">
                                 <label for="">
                                     <span class="checkmark"></span>
                                     주차장
                                 </label>
                             </span>
-                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                            <span class="checkbox-button checked" style="width: calc(100%/5 - 10px); flex: none">
                                 <input type="checkbox">
                                 <label for="">
                                     <span class="checkmark"></span>
                                     엘리베이터
                                 </label>
                             </span>
-                            <span class="checkbox-button" style="width: calc(100%/5 - 10px); flex: none">
+                            <span class="checkbox-button checked" style="width: calc(100%/5 - 10px); flex: none">
                                 <input type="checkbox">
                                 <label for="">
                                     <span class="checkmark"></span>
@@ -298,7 +298,7 @@
                             <strong class="label-text">사용자 구분 (다중 선택 가능)</strong>
                         </label>
                         <div class="d-flex" style="flex-wrap: wrap; padding: 10px 0 0 0 ">
-                            <span class="checkbox-button">
+                            <span class="checkbox-button checked">
                                 <input type="checkbox">
                                 <label for="">
                                     <span class="checkmark"></span>
@@ -345,6 +345,44 @@
                             소화기 및 화재 감지 시스템 - 밥, 김치, 라면, 계란, 커피, 녹차 무료제공
                         </span>
                         <textarea placeholder="고시원 상세 설명을 입력해 주세요."></textarea>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="">
+                            <strong class="label-text">지하철</strong>
+                            <span class="inform">
+                                <a class="tooltip-wrap">
+                                    <img src="/public/img/new-img/icon-inform.png" alt="inform icon">
+                                    <span class="tooltip-content">
+                                        <img src="/public/img/new-img/tooltip-content-img01.png" alt="tooltip-content-img01" style="display: block; height: 229px; width: 193px; margin: 0 auto">
+                                        지하철
+                                    </span>
+                                </a>
+                            </span>
+                        </label>
+                        <span class="subway-wrap">
+                            <figure><img src="/public/img/new-img/icon-subway.png" alt="subway"></figure>
+                            <small>지하철 추가</small>
+                        </span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="input-wrap subway-select-content">
+                            <label for="">
+                                <strong class="label-text">지하철 정보를 추가해주세요</strong>
+                            </label>
+                            <div class="d-flex subway-select-wrap">
+                                <select name="" id="" style="width:100%; height: 45px; border-bottom : 1px solid #eee; outline: none">
+                                    <option value="" disabled selected>지하철 호선</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <input type="text" placeholder="역이름을 입력해주세요." style="display:block;margin-left:10px">
+                                <button class="delete" type="button">
+                                    <img src="/public/img/new-img/icon-trash.png" alt="trash">
+                                    삭제
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div class="photo-wrap">
                         <div class="input-wrap">
@@ -504,6 +542,16 @@
             tooltipSpan.style.top = (y + 20) + 'px';
             tooltipSpan.style.left = (x + 20) + 'px';
         }
+        })
+
+        const subwayTriger = document.querySelector('.subway-wrap')
+        const subwayDelete = document.querySelector('.subway-select-content .delete')
+        const subwayContent = document.querySelector('.subway-select-content')
+        subwayTriger.addEventListener('click', function(){
+            subwayContent.classList.add('active')
+        })
+        subwayDelete.addEventListener('click', function(){
+            subwayContent.classList.remove('active')
         })
     </script>
 </body>
