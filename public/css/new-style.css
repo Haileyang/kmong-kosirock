@@ -1475,6 +1475,9 @@ img.hidden {
 .subway-select-content.active{
     display: block;
 }
+.subway-select-wrap{
+    position: relative;
+}
 @media(max-width: 600px){
     .new-form{
         padding: 0;

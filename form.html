@@ -364,11 +364,24 @@
                             <small>지하철 추가</small>
                         </span>
                     </div>
-                    <div class="d-flex">
+                    <div>
                         <div class="input-wrap subway-select-content">
                             <label for="">
                                 <strong class="label-text">지하철 정보를 추가해주세요</strong>
                             </label>
+                            <div class="d-flex subway-select-wrap">
+                                <select name="" id="" style="width:100%; height: 45px; border-bottom : 1px solid #eee; outline: none">
+                                    <option value="" disabled selected>지하철 호선</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <input type="text" placeholder="역이름을 입력해주세요." style="display:block;margin-left:10px">
+                                <button class="delete" type="button">
+                                    <img src="/public/img/new-img/icon-trash.png" alt="trash">
+                                    삭제
+                                </button>
+                            </div>
                             <div class="d-flex subway-select-wrap">
                                 <select name="" id="" style="width:100%; height: 45px; border-bottom : 1px solid #eee; outline: none">
                                     <option value="" disabled selected>지하철 호선</option>
@@ -545,14 +558,25 @@
         })
 
         const subwayTriger = document.querySelector('.subway-wrap')
-        const subwayDelete = document.querySelector('.subway-select-content .delete')
         const subwayContent = document.querySelector('.subway-select-content')
         subwayTriger.addEventListener('click', function(){
             subwayContent.classList.add('active')
         })
-        subwayDelete.addEventListener('click', function(){
-            subwayContent.classList.remove('active')
-        })
+        
+        function hideParentOnDeleteClick() {
+
+            let deleteButtons = document.querySelectorAll('.subway-select-content .delete');
+            let deleteButtonsArray = Array.from(deleteButtons);
+
+            deleteButtonsArray.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    let parent = button.parentElement;
+                    parent.style.display = 'none';
+                });
+            });
+        }
+        hideParentOnDeleteClick();
+
     </script>
 </body>
 
